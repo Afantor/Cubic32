@@ -10,60 +10,68 @@ Welcome to program with Cubic32 Core
 
 *1.For MacOS*
 
-https://docs.m5stack.com/#/en/quick_start/m5core/m5stack_core_get_started_Arduino_MacOS
+
 
 *2. For Windows*
 
-https://docs.m5stack.com/#/en/quick_start/m5core/m5stack_core_get_started_Arduino_Windows
+
 
 
 ## 2. Example
 
-https://github.com/m5stack/M5Stack/tree/master/examples
+https://github.com/Afantor/Cubic32/tree/master/examples
 
 ## 3. API Reference
 
-https://github.com/m5stack/M5Stack/blob/master/src/M5Stack.h#L19
-
-https://docs.m5stack.com/#/en/api
+https://github.com/Afantor/Cubic32/blob/master/src/Cubic32.h#L19
 
 ## 4. H/W Reference
 
 #### Pinout
 
-*We have several kinds of M5Cores, There is [their difference in schematic](https://github.com/m5stack/M5-Schematic/blob/master/Core/hardware_difference_between_cores.md).*
+*We have several kinds of ESP32 Cores, There is [their difference in schematic](https://github.com/m5stack/M5-Schematic/blob/master/Core/hardware_difference_between_cores.md).*
 
-**LCD & TF Card**
+**LCD**
 
 *LCD Resolution: 320x240*
 
 <table>
- <tr><td>ESP32 Chip</td><td>GPIO23</td><td>GPIO19</td><td>GPIO18</td><td>GPIO14</td><td>GPIO27</td><td>GPIO33</td><td>GPIO32</td><td>GPIO4</td></tr>
- <tr><td>ILI9341</td><td>/</td><td>MISO</td><td>CLK</td><td>CS</td><td>DC</td><td>RST</td><td>BL</td><td> </td></tr>
- <tr><td>TF Card</td><td>MOSI</td><td>MISO</td><td>CLK</td><td> </td><td> </td><td> </td><td> </td><td>CS</td></tr>
+ <tr><td>ESP32 Chip</td><td>GPIO13</td><td>GPIO14</td><td>GPIO15</td><td>GPIO2</td><td>GPIO27</td><td>GPIO4</td><td>GPIO4</td></tr>
+ <tr><td>ILI9341</td><td>MOSI</td><td>CLK</td><td>CS</td><td>DC</td><td>RST</td><td>BLK</td><td> </td></tr>
+
+</table>
+
+**Touch & TF Card**
+
+<table>
+ <tr><td>ESP32 Chip</td><td>GPIO23</td><td>GPIO19</td><td>GPIO18</td><td>GPIO32</td><td>GPIO5</td></tr>
+ <tr><td>XPT2046</td><td>MOSI</td><td>MISO</td><td>CLK</td><td>CS</td><td>IRQ</td><td>RST</td><td>BL</td><td> </td></tr>
+ <tr><td>TF Card</td><td>MOSI</td><td>MISO</td><td>CLK</td><td> </td><td> </td><td>CS</td></tr>
 
 </table>
 
 **Button & Speaker**
 
 <table>
- <tr><td>ESP32 Chip</td><td>GPIO39</td><td>GPIO38</td><td>GPIO37</td><td>GPIO25</td></tr>
- <tr><td>Button Pin</td><td>BUTTON A</td><td>BUTTON B</td><td>BUTTON C</td></tr>
- <tr><td>Speaker</td><td> </td><td> </td><td> </td><td>Speaker Pin</td></tr>
+ <tr><td>ESP32 Chip</td><td>GPIO0</td><td>GPIO39</td><td>GPIO25</td></tr>
+ <tr><td>Button Pin</td><td>BUTTON R</td><td>BUTTON A/B/C</td></tr>
+ <tr><td>Speaker</td><td> </td><td> </td><td>Speaker Pin</td></tr>
 </table>
 
-**GROVE A**
+**IMU & RTC & Temp/Hum**
 
 <table>
- <tr><td>ESP32 Chip</td><td>GPIO22</td><td>GPIO21</td></tr>
- <tr><td>GROVE A</td><td>SCL</td><td>SDA</td></tr>
+ <tr><td>ESP32 Chip</td><td>GPIO22</td><td>GPIO21</td><td>Address</td></tr>
+ <tr><td>MPU6050</td><td>SCL</td><td>SDA</td><td>0x68</td></tr>
+ <tr><td>PCF8563T</td><td>SCL</td><td>SDA</td><td>0x38</td></tr>
+ <tr><td>AHT10</td><td>SCL</td><td>SDA</td><td>0xA3</td></tr>
 </table>
 
 
 ### M-BUS
 ![image](docs/M-BUS.jpg)
 
-## 5. USER CASES
+## 5. M5stack USER CASES
 
 * [M5Stack-SD-Updater](https://github.com/tobozo/M5Stack-SD-Updater) - Customizable menu system for M5Stack - loads apps from the Micro SD
   card
