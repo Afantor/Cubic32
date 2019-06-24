@@ -1,0 +1,20 @@
+menu "Cubic32"
+
+choice CORE_TYPE
+    prompt "Type of Core"
+    default CUBIC32_BASIC
+    help
+        Type of Core.
+
+config Cubic32
+    bool "Cubic32"
+config CUBIC32_BASIC
+    bool "Cubic32 Basic"
+config CUBIC32_GRAY
+    bool "Cubic32 Gray"
+config CUBIC32_FIRE
+    bool "CUBIC32 Fire"
+endchoice
+
+endmenu
+
