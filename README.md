@@ -10,12 +10,15 @@ Welcome to program with Cubic32 Core
 
 *1.For MacOS*
 
-
+Coming soon...
 
 *2. For Windows*
 
+Coming soon...
 
+*3. For VSCode in Windows*
 
+Coming soon...
 
 ## 2. Example
 
@@ -36,16 +39,16 @@ https://github.com/Afantor/Cubic32/blob/master/src/Cubic32.h#L19
 *LCD Resolution: 320x240*
 
 <table>
- <tr><td>ESP32 Chip</td><td>GPIO13</td><td>GPIO14</td><td>GPIO15</td><td>GPIO2</td><td>GPIO27</td><td>GPIO4</td><td>GPIO4</td></tr>
- <tr><td>ILI9341</td><td>MOSI</td><td>CLK</td><td>CS</td><td>DC</td><td>RST</td><td>BLK</td><td> </td></tr>
+ <tr><td>ESP32 Chip</td><td>GPIO13</td><td>GPIO14</td><td>GPIO15</td><td>GPIO2</td><td>GPIO27</td><td>GPIO4</td></tr>
+ <tr><td>ILI9341</td><td>MOSI</td><td>CLK</td><td>CS</td><td>DC</td><td>RST</td><td>BLK</td></tr>
 
 </table>
 
 **Touch & TF Card**
 
 <table>
- <tr><td>ESP32 Chip</td><td>GPIO23</td><td>GPIO19</td><td>GPIO18</td><td>GPIO32</td><td>GPIO5</td></tr>
- <tr><td>XPT2046</td><td>MOSI</td><td>MISO</td><td>CLK</td><td>CS</td><td>IRQ</td><td>RST</td><td>BL</td><td> </td></tr>
+ <tr><td>ESP32 Chip</td><td>GPIO23</td><td>GPIO19</td><td>GPIO18</td><td>GPIO32</td><td>GPIO33</td><td>GPIO5</td></tr>
+ <tr><td>XPT2046</td><td>MOSI</td><td>MISO</td><td>CLK</td><td>CS</td><td>IRQ</td></tr>
  <tr><td>TF Card</td><td>MOSI</td><td>MISO</td><td>CLK</td><td> </td><td> </td><td>CS</td></tr>
 
 </table>
@@ -54,7 +57,7 @@ https://github.com/Afantor/Cubic32/blob/master/src/Cubic32.h#L19
 
 <table>
  <tr><td>ESP32 Chip</td><td>GPIO0</td><td>GPIO39</td><td>GPIO25</td></tr>
- <tr><td>Button Pin</td><td>BUTTON R</td><td>BUTTON A/B/C</td></tr>
+ <tr><td>Button Pin</td><td>BUTTON R</td><td>BUTTON A/B/C</td><td> </td></tr>
  <tr><td>Speaker</td><td> </td><td> </td><td>Speaker Pin</td></tr>
 </table>
 
